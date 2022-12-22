@@ -1,4 +1,5 @@
 <?php
+
 class StrValTest
 {
     public function __toString()
@@ -9,5 +10,3 @@ class StrValTest
 
 // Prints 'StrValTest' ***No clear**
 echo strval(12+12);
-
-?>
