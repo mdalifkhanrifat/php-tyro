@@ -10,11 +10,11 @@ $resume =
             'phone' => '+8801776641699'
         ],
 
-        'img_url'   => 'img',
+        'img_url'   => 'img/img.png',
 
-        'career_Objective' => 'To work in a challenging environment with a scope of future progress applying my academic knowledge and working capability. Would like to welcome the change to work as a part of a dynamic working team where. I could make a significant contribution while developing my skill yet further.',
+        'career_objective' => 'To work in a challenging environment with a scope of future progress applying my academic knowledge and working capability. Would like to welcome the change to work as a part of a dynamic working team where. I could make a significant contribution while developing my skill yet further.',
 
-        'Present Statas' => 'To obtain a position that will allow me to utilize my technical skills, experience, and willingness to make an organization successful. Seeking an entry-leve position to begin my career in a high-level professional environment.',
+        'present_status' => 'To obtain a position that will allow me to utilize my technical skills, experience, and willingness to make an organization successful. Seeking an entry-leve position to begin my career in a high-level professional environment.',
 
         'education' =>
         [
@@ -73,7 +73,7 @@ $resume =
             'others' => 'Auto cad, Ms Office, XL, Power point'
 
         ],
-        
+
         'professional_experience' => 'No Professional Experience',
 
         'projects' =>
@@ -112,7 +112,7 @@ $resume =
             'full_name' => 'Md. Alif Khan Rifat',
             'father_name' => 'Md. Shahjahan Ali Khan',
             'mother_nmae' => 'MST. Jesmin Sultana',
-            'Date of Birth' => '05-12-1997',
+            'date_of_birth' => '05-12-1997',
             'marital_status' => 'Single',
             'nationality' => 'Bangladeshi',
             'religion' => 'Muslim',
@@ -155,4 +155,4 @@ $resume =
         'footer' => 'Copyright © Md Alif Kahn Rifat, 2022',
     ];
 
-print_r($resume);
+//print_r($resume);
