@@ -115,7 +115,7 @@ include_once 'resume.php';
                         <tr>
                             <td><?php echo $resume['computer_skills']['computer_skills_title'][4]; ?></td>
                             <td>&nbsp; &nbsp; &nbsp; : &nbsp; &nbsp; </td>
-                            <td><?php echo $resume['development_tools']; ?></td>
+                            <td><?php echo $resume['development_tools']['development_tools']; ?></td>
                         </tr>
                         <tr>
                             <td><?php echo $resume['computer_skills']['computer_skills_title'][5]; ?></td>
