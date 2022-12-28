@@ -14,11 +14,11 @@ include_once 'resume.php';
 </head>
 
 <body>
-    <div class="container">
+    <section class="container">
 
-        <div class="section_one">
+        <section class="section_one">
 
-            <div class="section_one_left">
+            <section class="section_one_left">
                 <br>
                 <br>
                 <br>
@@ -29,30 +29,30 @@ include_once 'resume.php';
                     <?php echo $resume['contract_info']['email']; ?><br>
                     <?php echo $resume['contract_info']['phone']; ?><br>
                 </p>
-            </div>
+            </section>
 
-            <div class="section_one_right">
+            <section class="section_one_right">
                 <img class="p_img" src="<?php echo $resume['img_url']; ?>" alt="Picture">
-            </div>
-        </div>
+            </section>
+        </section>
 
-        <div class="section_two">
+        <section class="section_two">
             <p class="heading_boder"><b>Career Objective</b></p>
             <p class="extra_padding"> <?php echo $resume['career_objective']; ?><br> </p>
-        </div>
+        </section>
 
-        <div class="section_three">
+        <section class="section_three">
             <p class="heading_boder"><b>Present Statas</b></p>
             <p class="extra_padding"><?php echo $resume['present_status']; ?><br></p>
-        </div>
+        </section>
 
-        <div class="section_four">
+        <section class="section_four">
 
-            <div>
+            <section>
                 <p class="heading_boder"><b>Education</b></p>
-            </div>
+            </section>
 
-            <div class="extra_padding">
+            <section class="extra_padding">
 
                 <table class="euducation_table">
                     <tr>
@@ -85,12 +85,12 @@ include_once 'resume.php';
                     </tr>
                 </table>
 
-            </div>
+            </section>
 
-            <div class="section_five extra_padding">
+            <section class="section_five extra_padding">
                 <p class="heading_boder"><b>Computer Skills</b></p>
 
-                <div class="skil_info extra_padding">
+                <section class="skil_info extra_padding">
                     <table class="">
                         <tr>
                             <td><?php echo $resume['computer_skills']['computer_skills_title'][0]; ?></td>
@@ -123,18 +123,18 @@ include_once 'resume.php';
                             <td><?php echo $resume['computer_skills']['others']; ?></td>
                         </tr>
                     </table>
-                </div>
+                </section>
 
-            </div>
+            </section>
 
-        </div>
+        </section>
 
-        <div class="section_six extra_padding">
+        <section class="section_six extra_padding">
             <p class="heading_boder"><b>Professional Experience</b></p>
             <p><?php echo $resume['professional_experience']; ?></p>
-        </div>
+        </section>
 
-        <div class="section_seven">
+        <section class="section_seven">
 
             <p class="heading_boder"><b>Projects</b></p>
 
@@ -153,8 +153,8 @@ include_once 'resume.php';
 
             </dl>
 
-        </div>
-        <div class="section_eight">
+        </section>
+        <section class="section_eight">
 
             <p class="heading_boder"><b>Academic Projects</b></p>
 
@@ -196,19 +196,19 @@ include_once 'resume.php';
                 </ul>
             </dl>
 
-        </div>
+        </section>
 
-        <div class="section_nine">
+        <section class="section_nine">
             <p class="heading_boder"><b>Achievements</b></p>
             <p>
                 <?php echo $resume['achievements']; ?>
             </p>
-        </div>
+        </section>
 
-        <div class="section_ten">
+        <section class="section_ten">
             <p class="heading_boder"><b>Personal Information</b></p>
 
-            <div class="personal_info extra_padding">
+            <section class="personal_info extra_padding">
                 <table class="">
 
                     <tr>
@@ -264,23 +264,23 @@ include_once 'resume.php';
 
                 </table>
 
-            </div>
+            </section>
 
-        </div>
+        </section>
 
-        <div class="section_ten extra_padding">
+        <section class="section_ten extra_padding">
             <p class="heading_boder"><b>Hobbies</b></p>
             <p>
                 <?php echo $resume['hobbies']; ?>
             </p>
-        </div>
+        </section>
 
-        <div class="section_eleven">
+        <section class="section_eleven">
             <p class="heading_boder"><b>Game</b></p>
             <p> <?php echo $resume['game']; ?></p>
-        </div>
+        </section>
 
-        <div class="section_twelve">
+        <section class="section_twelve">
 
             <p class="heading_boder"><b>References</b></p>
             <dl class="extra_padding">
@@ -296,12 +296,12 @@ include_once 'resume.php';
                 <dt><?php echo $resume['references']['references_title'][3] . $resume['references']['references_2'][3]; ?></dt>
             </dl>
 
-        </div>
+        </section>
 
         <footer class="extra_padding">
             <p style="text-align: center;"><?php echo $resume['footer']; ?></p>
         </footer>
-    </div>
+    </section>
 
 </body>
 
