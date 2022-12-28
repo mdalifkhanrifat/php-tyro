@@ -1,3 +1,6 @@
+<?php
+include_once 'calculator.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +16,7 @@
             height: 200px;
             width: 50%;
             float: left;
-            text-align: center;
+            text-align: right;
 
         }
 
@@ -36,11 +39,15 @@
 <body>
     <h1>Question:</h1>
     <h2>Create a calculator with PHP. Collect input data through HTML form.</h2>
+    <p>
+    - Value 1 (text input) <br>
+- Value 2 (text input) <br>
+- Action (dropdown, options: Addition, Substraction, Multiplication, Division) <br> <br>
+    </p>
     <br>
     <br>
-
+    <br>
     <section>
-
         <section class="section_one_left">
             <form action="" method="GET">
                 <input class="input_box" name="number1" type="number" placeholder="value 1" width="48" height="48">
@@ -65,49 +72,9 @@
                 <button class="input_box" type="submit" width="48" height="48"> = </button>
             </form>
         </section>
-
         <section class="section_one_right">
-            <?php
-            if (isset($_GET['number1'])) {
-                $number1 = $_GET['number1'];
-            } else {
-                $number1 = 0;
-            }
-
-            if (isset($_GET['number2'])) {
-                $number2 = $_GET['number2'];
-            } else {
-                $number2 = 0;
-            }
-
-            if (isset($_GET['operation'])) {
-                $operation = $_GET['operation'];
-            } else {
-                $operation = '+';
-            }
-
-            if (is_numeric($number1) && is_numeric($number1)) {
-                if ($operation === '+') {
-                    $result = $number1 + $number2;
-                } elseif ($operation === '-') {
-                    $result = $number1 - $number2;
-                } elseif ($operation === '*') {
-                    $result = $number1 * $number2;
-                } elseif ($operation === '/') {
-                    $result = $number1 / $number2;
-                } elseif ($operation === '%') {
-                    $result = $number1 % $number2;
-                } else {
-                    $result = 0;
-                }
-            } else {
-                $result = "input must be numeric";
-            }
-
-            ?>
             <input name="result" type="text" placeholder="Output" value="<?php echo $result ?>" height="48">
         </section>
-
     </section>
 
 </body>
