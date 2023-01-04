@@ -275,9 +275,11 @@ $grade = convertgrade($cgpa, $operation);
 
 function convertgrade(float $gpa, $level)
 {
-    if ($level === "HSC" || $level === "JSC" || $level === "SSC") 
-    {
-        if ($gpa == 5.0) {
+    if ($level === "HSC" || $level === "JSC" || $level === "SSC") {
+
+        if ($gpa > 5.0 || $gpa < 0) {
+            return 'Grade not found';
+        } elseif ($gpa == 5.0) {
             return 'A+';
         } else if ($gpa >= 4.0 && $gpa <= 4.9) {
             return "A";
@@ -292,11 +294,10 @@ function convertgrade(float $gpa, $level)
         } else {
             return "F";
         }
-    }
-
-    else
-    {
-        if ($gpa == 4.0) {
+    } else {
+        if ($gpa > 4.0 || $gpa < 0) {
+            return 'Grade not found';
+        } else if ($gpa == 4.0) {
             return 'A+';
         } else if ($gpa >= 3.75 && $gpa <= 3.9) {
             return "A";
@@ -306,15 +307,15 @@ function convertgrade(float $gpa, $level)
             return "B+";
         } else if ($gpa >= 3.0 && $gpa <= 3.24) {
             return "B";
-        }  else if ($gpa >= 2.75 && $gpa <= 2.9) {
+        } else if ($gpa >= 2.75 && $gpa <= 2.9) {
             return "B-";
         } else if ($gpa >= 2.50 && $gpa <= 2.74) {
             return "C+";
         } else if ($gpa >= 2.25 && $gpa <= 3.49) {
             return "B";
-        }else if ($gpa >= 2.0 && $gpa <= 2.24) {
+        } else if ($gpa >= 2.0 && $gpa <= 2.24) {
             return "B";
-        }else {
+        } else {
             return "F";
         }
     }
