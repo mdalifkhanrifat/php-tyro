@@ -50,7 +50,7 @@ include_once 'calculator.php';
     <section>
         <section class="section_one_left">
             <form action="" method="GET">
-                <input class="input_box" name="number1" type="number" placeholder="value 1" width="48" height="48">
+                <input class="input_box" name="number1" type="text" placeholder="value 1" width="48" height="48">
                 <select name="operation" id="#">
                     <option value="+">
                         <h1>+</h1>
@@ -68,7 +68,7 @@ include_once 'calculator.php';
                         <h1>%</h1>
                     </option>
                 </select>
-                <input class="input_box" name="number2" type="number" placeholder="value 2">
+                <input class="input_box" name="number2" type="text" placeholder="value 2">
                 <button class="input_box" type="submit" width="48" height="48"> = </button>
             </form>
         </section>
