@@ -44,13 +44,8 @@
                         $n--;
                     }
                     echo '<section class="border rounded-lg p-1 bg-gray-200" >'.'The number is ' . $n . '</section><br>';
-
                     value($n);
-
                 }
-
-                
-
                 ?>
             </section>
         </section>
