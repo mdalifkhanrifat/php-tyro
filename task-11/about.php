@@ -1,13 +1,8 @@
 <?php
-$page_title="Index";
-
-// Magic constants
-echo 'Directory: ' .  __DIR__ . DIRECTORY_SEPARATOR.    'layouts/head.php' . '<br/>';
-echo 'File Name: ' . __FILE__ . '<br/>';
-echo 'Line Number: ' . __LINE__ . '<br/>';
+$page_title="About"
 ?>
 <!-- Head -->
-<?php include_once __DIR__ . DIRECTORY_SEPARATOR .   'layouts/head.php'; ?>
+<?php include_once  './layouts/head.php'; ?>
 
 <!-- Navigation -->
 <?php include_once  './layouts/nav.php'; ?>
