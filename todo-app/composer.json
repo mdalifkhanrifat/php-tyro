@@ -1,0 +1,15 @@
+{
+    "name": "todoapp/dev",
+    "autoload": {
+        "psr-4": {
+            "Todoapp\\Dev\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mdalifkhanrifat",
+            "email": "mdalifkhanrifat@gmail.com"
+        }
+    ],
+    "require": {}
+}
