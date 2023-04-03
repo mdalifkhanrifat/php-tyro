@@ -35,7 +35,7 @@ if(isset($_GET['id'])){
               <div class="col-lg-6 m-auto">
                <div class="card">
                    <div class="card-header">
-                       <h3>My To Do List</h3>
+                       <h3>ToDo List</h3>
                    </div>
                    <div class="card-body">
                         <form action="edit.php" method="POST">
